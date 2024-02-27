@@ -9,8 +9,35 @@ public class Car extends Vehicle {
     private int currentGear;
     private int seats;
 
+
     public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats) {
         //Hint: Car extends Vehicle
+        super(name);
+    }
+    public int getWheels()
+    {
+        return wheels;
+    }
+    public int getDoors()
+    {
+        return doors;
+    }
+    public int getGears()
+    {
+        return gears;
+    }
+    public boolean getIsManual() { return isManual; }
+    public String getType()
+    {
+        return type;
+    }
+    public int getSeats()
+    {
+        return seats;
+    }
+    public int getCurrentDirection()
+    {
+        return super.getCurrentDirection();
     }
 
     public void changeGear(int newGear){
@@ -22,4 +49,5 @@ public class Car extends Vehicle {
 
         System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed + ", and the direction is changed to: " + newDirection + " degrees");
     }
+
 }
