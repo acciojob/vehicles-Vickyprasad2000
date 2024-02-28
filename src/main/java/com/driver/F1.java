@@ -8,6 +8,10 @@ public class F1 extends Car {
         //Use arbitrary values for parameters which are not mentioned
         super(name,4,0,6,isManual,"race",1);
     }
+    public int getCurrentGear()
+    {
+        return super.getCurrentGear();
+    }
 
     public void accelerate(int rate){
         int newSpeed = getCurrentSpeed() + rate; //set the value of new speed by using currentSpeed and rate
@@ -30,7 +34,7 @@ public class F1 extends Car {
 
 
         if(newSpeed > 0) {
-            changeGear((newSpeed >= 1 && newSpeed <= 50) ? 1 : (newSpeed >= 51 && newSpeed <= 100) ? 2 : (newSpeed >= 101 && newSpeed <= 150) ? 3 : (true && newSpeed <= 200) ? 4 : (newSpeed >= 201 && newSpeed <= 250) ? 5 : 6);
+            changeGear((newSpeed <= 50) ? 1 : (newSpeed <= 100) ? 2 : (newSpeed <= 150) ? 3 : (newSpeed <= 200) ? 4 : (newSpeed <= 250) ? 5 : 6);
             changeSpeed(newSpeed, getCurrentDirection());
         }
     }
