@@ -10,6 +10,5 @@ public class Main {
         Boat pawanDoni = new Boat("pawanDoni", 850);
         System.out.println(pawanDoni.getVehicleName());
         System.out.println(pawanDoni.getVehicleCapacity());
-
     }
 }

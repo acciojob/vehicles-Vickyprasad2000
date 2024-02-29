@@ -33,7 +33,7 @@ public class Car extends Vehicle {
     {
         return gears;
     }
-    public boolean isManual() { return isManual; }
+    public boolean getIsManual() { return isManual; }
     public String getType()
     {
         return type;
