@@ -1,5 +1,7 @@
 package com.driver;
 
+import java.lang.reflect.Type;
+
 public class Car extends Vehicle {
     private int wheels;
     private String type;
@@ -21,6 +23,29 @@ public class Car extends Vehicle {
         this.seats = seats;
         this.currentGear = 1;
 
+    }
+    public int getDoors()
+    {
+        return doors;
+    }
+    public int getGears()
+    {
+        return gears;
+    }
+    public int getWheels()
+    {
+        return wheels;
+    }
+    public String getType() {
+        return type;
+    }
+    public int getSeats()
+    {
+        return seats;
+    }
+    public int getCurrentGear()
+    {
+        return currentGear;
     }
     public String getName()
     {
