@@ -18,7 +18,4 @@ public class Boat implements WaterVehicle {
         return capacity;
     }
 
-    public boolean isManual() {
-        return false;
-    }
 }

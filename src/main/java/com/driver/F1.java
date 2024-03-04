@@ -8,11 +8,15 @@ public class F1 extends Car {
         //Use arbitrary values for parameters which are not mentioned
         super(name,4,0,6,isManual,"race",1);
     }
+    public boolean isManual()
+    {
+        return isManual();
+    }
 
 
     public void accelerate(int rate){
         int newSpeed = getCurrentSpeed() + rate; //set the value of new speed by using currentSpeed and rate
-        /**
+        /*
          * speed 0: gear 1
          * speed 1-50: gear 1
          * speed 51-100: gear 2
