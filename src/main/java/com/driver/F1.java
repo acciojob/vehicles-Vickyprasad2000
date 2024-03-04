@@ -10,11 +10,11 @@ public class F1 extends Car {
     }
     public boolean isManual()
     {
-        return isManual();
+        return super.isManual();
     }
-    public int getCurretntGear()
+    public int getCurrentGear()
     {
-        return getCurretntGear();
+        return super.getCurrentGear();
     }
 
 
