@@ -12,6 +12,10 @@ public class F1 extends Car {
     {
         return isManual();
     }
+    public int getCurretntGear()
+    {
+        return getCurretntGear();
+    }
 
 
     public void accelerate(int rate){
