@@ -24,6 +24,20 @@ public class Car extends Vehicle {
         this.currentGear = 1;
 
     }
+    public String getName()
+    {
+        return super.getName();
+    }
+
+    public int getCurrentDirection()
+    {
+        return super.getCurrentDirection();
+    }
+    public int getCurrentSpeed() { return super.getCurrentSpeed(); }
+    public int getCurrentGear()
+    {
+        return currentGear;
+    }
     public int getDoors()
     {
         return doors;
@@ -43,22 +57,8 @@ public class Car extends Vehicle {
     {
         return seats;
     }
-    public int getCurrentGear()
-    {
-        return currentGear;
-    }
-    public String getName()
-    {
-        return super.getName();
-    }
-
     public boolean isManual() { return isManual; }
 
-    public int getCurrentDirection()
-    {
-        return super.getCurrentDirection();
-    }
-    public int getCurrentSpeed() { return super.getCurrentSpeed(); }
 
     public void changeGear(int newGear){
         this.currentGear = newGear;
